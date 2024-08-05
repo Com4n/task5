@@ -1,0 +1,23 @@
+PS C:\Users\adita\Desktop\task5> go run convert.go compress-cached mat.in mat.in.x 100
+Cached conversion took 0.14 seconds
+
+PS C:\Users\adita\Desktop\task5> go run convert.go compress-noncached mat.in mat.in.x
+Non-cached conversion took 0.11 seconds
+
+PS C:\Users\adita\Desktop\task5> go run convert.go decompress-cached mat.in.x mat.in 100
+Cached decompression took 0.11 seconds
+ 
+PS C:\Users\adita\Desktop\task5> go run convert.go decompress-noncached mat.in.x mat.in
+Non-cached decompression took 0.07 seconds
+PS C:\Users\adita\Desktop\task5>
+
+
+
+PS C:\Users\adita\Desktop\task5> go run convert.go compress-cached mat.in mat.in.x 1000
+Cached conversion took 0.09 seconds
+PS C:\Users\adita\Desktop\task5> go run convert.go compress-cached mat.in mat.in.x 500 
+Cached conversion took 0.09 seconds
+PS C:\Users\adita\Desktop\task5> go run convert.go compress-cached mat.in mat.in.x 10 
+Cached conversion took 0.10 seconds
+PS C:\Users\adita\Desktop\task5> go run convert.go compress-cached mat.in mat.in.x 5000
+Cached conversion took 0.08 seconds
